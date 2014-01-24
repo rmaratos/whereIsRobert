@@ -1,0 +1,10 @@
+<html>
+    <body>
+        {% if location %}
+        <h1> {{name}} is {{location.location}}. </h1>
+        <p> As of {{location.timestamp}} </p>
+        {% else %}
+        <h1> Location unknown. </h1>
+        {% endif %}
+    </body>
+</html>

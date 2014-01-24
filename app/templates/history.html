@@ -1,0 +1,12 @@
+<html>
+    <body>
+        {% if locationHistory %}
+        <h1> {{name}}'s history. </h1>
+        {% endif %}
+        {% for location in locationHistory %}
+        <p>{{location.location}} -- {{location.timestamp}} </p>
+        {% else %}
+        <h1> No history. <h1>
+        {% endfor %}
+    </body>
+</html>
